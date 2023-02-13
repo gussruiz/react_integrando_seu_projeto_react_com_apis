@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+import Banner from '../../componentes/Banner';
+import ListaRestaurantes from '../../componentes/ListaRestaurantes';
+import NavBar from '../../componentes/NavBar';
+import Rodape from '../../componentes/Rodape';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <>
+      <NavBar />
+      <Banner />
+      <ListaRestaurantes />
+      <Rodape />
+    </>
+  );
+}
+
+export default App;
